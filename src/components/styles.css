@@ -24,3 +24,42 @@
     
     border-radius: 15px;
   }
+
+  .footer {
+    width: 100vw;
+    height: 12vh;
+    background-color: black;
+    color: white;
+  }
+
+  .footer-icon {
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .footer-text {
+    color: white;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .rec {
+    width: 340px;
+    height: 340px;
+  }
+  .imglist {
+    display: flex;
+    flex-direction: row;
+    gap: 50px 60px;
+    width: 80%;
+    margin: 0 auto;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+    margin-left: 100px;
+  }
+  .nav {
+    display: flex;
+    justify-content: space-between;
+  }
+  

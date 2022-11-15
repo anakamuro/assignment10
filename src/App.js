@@ -9,12 +9,6 @@ function App() {
   return (
     <div className="App">
     <BrowserRouter>
-    <div className="image-icon">
-    <img src="VectorK.png" alt="k"></img>
-    <img src="Vectorhouse.png" alt="house"></img>
-    <img src="Vectors.png" alt="s"></img>
-    <img src="Vectora.png" alt="a"></img>
-    </div>
     <Navbar/>
       <Switch>
         <Route exact path='/'>
