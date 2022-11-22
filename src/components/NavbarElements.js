@@ -5,8 +5,7 @@ export const Nav = styled.nav`
   background: white;
   color: #FF6060;
   z-index: 12;
-  position: relative;
-  bottom: 85px;
+ padding-top: 100px;
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
@@ -29,11 +28,12 @@ export const NavLink = styled(Link)`
 
   
 export const NavMenu = styled.div`
+/*
   display: flex;
   float: right;
   align-items: center;
   margin-right: -24px;
-  /* Second Nav */
+  Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */
   /* width: 100vw;

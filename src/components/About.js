@@ -1,8 +1,14 @@
 import React from 'react';
+import './styles.css';
+import Footer from "./Footer"
  
 const About = () => {
 return (
-    <h1>About</h1>
+    <div>
+        <img className="mountain" src="mountain.png" alt="mountain"></img>
+        
+        <Footer/>
+    </div>
     );
 }
  

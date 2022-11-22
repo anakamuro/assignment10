@@ -1,6 +1,6 @@
-import './App.css';
+import React from "react";
 import Navbar from "./components/Navbar"
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from "./components/Home";
 import About from "./components/About";
 import Page404 from "./components/Page404";
@@ -8,20 +8,14 @@ import Page404 from "./components/Page404";
 function App() {
   return (
     <div className="App">
-    <BrowserRouter>
-    <Navbar/>
-      <Switch>
-        <Route exact path='/'>
-          <Home />
-        </Route>
-        <Route exact path='/about'>
-          <About />
-        </Route>
-        <Route exact path='/page404'>
-          <Page404 />
-        </Route>
-      </Switch>
-    </BrowserRouter>
+      <Navbar />
+      {/* <BrowserRouter> */}
+        <Routes>
+          <Route exact path='/home' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/page404' element={<Page404 />} />
+        </Routes>
+      {/* </BrowserRouter> */}
     </div>
   );
 }
