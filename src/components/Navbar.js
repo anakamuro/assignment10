@@ -17,7 +17,7 @@ const Navbar = () => {
           <img src="Vectora.png" alt="a"></img>
         </div>
 
-        <NavMenu>
+        <NavMenu className="nav-main">
           <NavLink to='/home'>
             Home
           </NavLink>

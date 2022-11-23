@@ -5,8 +5,10 @@
     height: 100%;
   }
   .image-icon {
-   margin-left: 100px;
+   display: flex;
+   justify-content: flex-start;
    margin-bottom: 70px;
+   margin-right: 600px;
   }
   .text {
     font-size: 48px;
@@ -42,11 +44,11 @@
     margin: 0 auto;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
     border-radius: 10px;
-    margin-left: 100px;
+    
   }
   .nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
   }
   .error {
     font-size: 300px;
@@ -146,15 +148,21 @@
     padding-bottom: 30px;
     margin: 0 auto;
   }
+  .main {
+    margin: 0 auto;
+  }
    .mountain {
+    clear: both;
     width: 85vw;;
     height: 200px;
-    position: relative;
-    left:100px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
     }
     #accordion {
       margin: 100px auto;
-      width: 600px;
+      width: 77vw;
+      padding-left: 100px;
     }
     #accordion li{
       list-style: none;
@@ -163,4 +171,51 @@
       background: #fff;
       padding: 10px;
       border-radius: 4px;
+    }
+    .wrapper {
+      display: flex;
+      height: 100vh;
+      
+      justify-content: center;
+      align-items: flex-start;
+    }
+    .accordion {
+      
+      margin: 0 auto;
+      padding-left: 0px
+    }
+    .item {
+      margin-bottom: 30px;
+    }
+    .title {
+      width: 70vw;
+      background: #FF6060;
+      color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      height: 47px;
+      padding-left: 2%;
+      border-radius: 5px;
+    }
+    .content {
+      color: #FF6060;
+      background: #F7F7F7;
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s cubic-bezier(0, 1, 0, 1);
+      font-family: 'Montserrat';
+      font-weight: 400;
+      font-size: 24px;
+      line-height: 34.22px;
+      height: 91px;
+      width: 68vw;
+      margin: 0 auto;
+    }
+    .content.show {
+      padding: 2%;
+      height: auto;
+      max-height: 9999px;
+      transition: all 0.5s cubic-bezier(0, 1, 0, 1);
     }
