@@ -1,7 +1,9 @@
 import React from 'react';
 import './styles.css';
 import Footer from "./Footer";
-import {useState} from "react"
+import {useState} from "react";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+ import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
  
 const About = () => {
 
@@ -23,7 +25,7 @@ return (
                 <div className="item">
                 <div className="title" onClick={() => toggle(i)}>
                     <h2>{item.title}</h2>
-                    <span>{selected === i ? '<img src="down-arrow.png'>'' : '<i className="fa fa-angle-up" style="font-size:36px"></i>'}</span>
+                    <span>{selected === i ? <FontAwesomeIcon className="icon" icon={faAngleDown} />  : <FontAwesomeIcon className="icon" icon={faAngleUp} />}</span>
                 </div>
                 <div className={selected === i ? 'content show': 'content'}>
                     {item.content}
