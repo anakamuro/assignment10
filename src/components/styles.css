@@ -8,7 +8,7 @@
    display: flex;
    justify-content: flex-start;
    margin-bottom: 70px;
-   margin-right: 600px;
+   margin-right: 50%;;
   }
   .text {
     font-size: 48px;
@@ -103,7 +103,7 @@
   .background {
     background: #F6F6F6;
     width: 85vw;
-    height: 2940px;
+    height: 3150px;
     position: relative;
     left: 100px;
     right: 100px;
@@ -180,7 +180,7 @@
       align-items: flex-start;
     }
     .accordion {
-      
+      padding-top: 2%;
       margin: 0 auto;
       padding-left: 0px
     }
@@ -222,3 +222,174 @@
     .icon {
       margin-right: 20px;
     }
+    .title-list {
+      display: flex;
+      flex-direction: column;
+    }
+    .heading {
+      background: white;
+      display: flex;
+      justify-content: space-betwwen;
+      width: 90%;
+      margin-left: 5%;
+    }
+    .cTitle {
+      color: #FF6060;
+      font-size: 2.25rem;
+      line-height: 3.209rem;
+      padding-top: 3%;
+    }
+    .cLocation {
+      color: #FF6060;
+      font-size: 1.125rem;
+    }
+    .hName {
+      color: #FF6060;
+      font-size: 1.125rem;
+      line-height: 1.604rem;
+      margin-right: 0.5rem;
+    }
+    .hPic {
+      border-radius: 50%;
+      width: 4rem;
+      height: 4rem;
+    }
+    .profile {
+     display: flex;
+     flex-direction: row;
+    
+    }
+    .cTagsList {
+      display: inline;
+    }
+    .cTags {
+     display: inline;
+      background: #FF6060;
+      color: white;
+      width: 7.188rem;
+      height: 1.563;
+      font-size: 0.875rem;
+      border-radius: 0.625rem;
+      line-height: 1.248rem;
+      padding: 1%;
+      margin-right: 2%;
+    }
+   .Dbackground {
+   width: 100%;
+   display: block;
+   
+   }
+   
+   .detail-pic {
+    /*
+    padding-top: 1900px;
+    margin-right: 100rem;
+    */
+    width: 90vw;
+    margin-left: 5%;
+    padding-top: 3%;
+   }
+   
+   .name-list {
+   margin-left: auto;
+   padding-top: 2%;
+   }
+   .backgroundB {
+    margin: 0 auto;
+    width: 90%;
+    margin-left: 5%;
+   }
+   .stars {
+    margin-top: 1rem;
+    margin-left: 2reauto;
+   }
+   .accordion-list {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    margin-left: 5%;
+    width: 100vw;
+    padding-top: 5%;
+   }
+   .description{
+    width: 48vw;
+   }
+   .eqipments {
+    width: 48vw;
+    margin-right: 5rem;;
+   }
+   .dTitle, .eTitle {
+    color: white;
+    background-color: #FF6060;
+    width: 55rem;
+    height:3.25rem;
+    font-size: 1.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 1.25rem;
+    border-radius: .625rem;
+   }
+   .dContent, .eContent {
+    background-color:  #F7F7F7;
+    color: #FF6060;
+    width: 55rem;
+    height: 15.563rem;
+    line-height: 2.5rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    font-style: normal;
+    font-family: 'Montserrat';
+    padding: 5%;
+    margin-bottom: 5%;
+   }
+   .eContent {
+    display: flex;
+    flex-direction: column;
+    vertical-align: center;
+   }
+   .dItem {
+    line-height: 0.5rem;
+    font-size: 1.2rem;
+    margin-top: 0;
+   }
+   .carousel {
+    width: 60%;
+    height: 700px;
+    background-color: black;
+    margin-left: 20%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+   }
+   .carouselInner {
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+   }
+   .carouselInner .left {
+    flex: 5%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+   }
+   .carouselInner .center {
+    flex: 80%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+   }
+   .carouselInner .right {
+    flex: 5%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 0.6);
+    display: grid;
+    place-items: center;
+    color: white;
+    cursor: pointer;
+   }

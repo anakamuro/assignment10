@@ -1,6 +1,7 @@
 import React from 'react';
 import postData from "./accomodation.json"
 import './styles.css';
+import {Link} from "react-router-dom";
 
 
 function Accomodation (){
@@ -13,7 +14,8 @@ function Accomodation (){
         <div className="post-container" key={postDetail.id}>
          <h3 className="pic-title">{postDetail.title}</h3>
          <div >
-        <img className="data-pic" src={postDetail.pictures[0]} alt="pic"/>
+        <Link to={`/cards/${postDetail.title}`}><img className="data-pic" src={postDetail.pictures[0]} alt="pic"/>
+        </Link>
         </div>
           </div>
       )

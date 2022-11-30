@@ -3,7 +3,7 @@ import './styles.css';
 import Footer from "./Footer";
 import {useState} from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
- import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
+import { faAngleDown, faAngleUp } from '@fortawesome/free-solid-svg-icons'
  
 const About = () => {
 
