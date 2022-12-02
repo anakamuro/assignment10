@@ -25,7 +25,7 @@ return (
                 <div className="item">
                 <div className="title" onClick={() => toggle(i)}>
                     <h2>{item.title}</h2>
-                    <span>{selected === i ? <FontAwesomeIcon className="icon" icon={faAngleDown} />  : <FontAwesomeIcon className="icon" icon={faAngleUp} />}</span>
+                    <div className="icon">{selected === i ? <FontAwesomeIcon className="icon" icon={faAngleDown} />  : <FontAwesomeIcon className="icon" icon={faAngleUp} />}</div>
                 </div>
                 <div className={selected === i ? 'content show': 'content'}>
                     {item.content}

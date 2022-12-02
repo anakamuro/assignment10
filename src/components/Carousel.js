@@ -5,8 +5,30 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 
  function Carousel({pictures}){
-    const [currImg , setCurrImg] = useState(0);
+    const [currImg , setCurrImg] = useState(1);
  //   const [ isIcon, setIsIcon] = useState(false);
+
+ 
+
+ const nextSlide = () => {
+    if (currImg !== pictures.length + 1){
+        setCurrImg(currImg + 1)
+    }
+    else if (currImg === pictures.length + 1){
+        setCurrImg(0) 
+    }
+ }
+
+ const prevSlide = () => {
+    if(currImg !== -1){
+        setCurrImg(currImg - 1)
+    }
+    else if ( currImg === -1){
+        setCurrImg(pictures.length) 
+    }
+ }
+
+ if(pictures === undefined) return '';
      return(
         <div className="carousel">
             <div 
@@ -14,17 +36,13 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
             style={{backgroundImage: `url(${pictures[currImg]})` }}>
 
             <div className="left"
-            onClick={()=> {
-                currImg > 0 && setCurrImg(currImg - 1);
-            }}
+            onClick={prevSlide}
             >
             <ArrowBackIosIcon tyle={{ fontSize: 30}}/>
             </div>
             <div className="center"></div>
             <div className="right"
-            onClick={()=> {
-                currImg < pictures.length - 1 && setCurrImg(currImg + 1);
-            }}
+            onClick={nextSlide}
             >
             <ArrowForwardIosIcon style={{ fontSize: 30}} />
             </div>

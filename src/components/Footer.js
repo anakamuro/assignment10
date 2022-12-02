@@ -6,7 +6,7 @@ const Footer = () => {
 return (
     <div className="footer">
     <div className="footer-icon">
-    <img src="Vectorfooterk.png" alt="fk"></img>
+    <img className="k" src="Vectorfooterk.png" alt="fk"></img>
     <img src="Vectorfooterh.png" alt="fh"></img>
     <img src="Vectorfooters.png" alt="fs"></img>
     <img src="Vectorfootera.png" alt="fa"></img>

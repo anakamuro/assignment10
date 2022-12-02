@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import postData from "./accomodation.json"
 import './styles.css';
 import {  useParams } from "react-router-dom";
@@ -17,6 +17,10 @@ import Carousel from "./Carousel";
 const DetailPage = () => {
     const { title } = useParams();
     const [isActive, setIsActive ] = useState(false);
+    const [isShow, setIsShow ] = useState(false);
+   /* const [ noIcon, setNoIcon ] = useState(false);*/
+
+    
    
   return (
     <div className="Dbackground">
@@ -34,7 +38,7 @@ const DetailPage = () => {
         <div className="heading">
         <div className="title-list">
         <h1 className="cTitle">{card.title}</h1>
-        <h3 className="cLocation">{card.Location}</h3>
+        <h3 className="cLocation">{card.location}</h3>
         <div className="cTagsList">
           {card.tags.map((tag, index)=> <h3 className="cTags" key={index}>{tag}</h3>) }
         
@@ -51,14 +55,14 @@ const DetailPage = () => {
         <div className="accordion-list">
           <div className="description">
             <div onClick={()=>setIsActive(!isActive)} className="dTitle" style={{marginBottom: isActive ? '' : '30%'}}>Description
-              <span className="iconD"> {isActive ? <FontAwesomeIcon className="icon" icon={faAngleDown} /> : <FontAwesomeIcon className="icon" icon={faAngleUp} /> }</span></div>
+              <div className="iconD"> {isActive ? <FontAwesomeIcon className="icon" icon={faAngleDown} /> : <FontAwesomeIcon className="icon" icon={faAngleUp} /> }</div></div>
              {isActive && <div className="dContent">{card.description}</div>}
              </div>
              <div className="equipments">
-            <div onClick={()=>setIsActive(!isActive)}  className="eTitle" style={{marginBottom: isActive ? '' : '30%'}}>Equipments
-            <span className="iconE"> {isActive ? <FontAwesomeIcon className="icon" icon={faAngleDown} /> : <FontAwesomeIcon className="icon" icon={faAngleUp} />} </span></div>
+            <div onClick={()=>setIsShow(!isShow)}  className="eTitle" style={{marginBottom: isShow ? '' : '30%'}}>Equipments
+            <div className="iconE"> {isShow ? <FontAwesomeIcon className={(pictures.length === 1) ? "icon": "noIcon" }  icon={faAngleDown} /> : <FontAwesomeIcon className="icon" icon={faAngleUp} />} </div></div>
               
-            {isActive && <div className="eContent" key ={card.id}>{card.Amenities.map((amenity,index)=> (<p className="dItem" key={index}>{amenity}</p>))}</div>}
+            {isShow && <div className="eContent" key ={card.id}>{card.Amenities.map((amenity,index)=> (<p className="dItem" key={index}>{amenity}</p>))}</div>}
              </div>
           </div>
           <Footer/>

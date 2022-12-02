@@ -12,9 +12,9 @@ export const Nav = styled.nav`
   
 export const NavLink = styled(Link)`
   color: #FF6060;
-  font-size: 24px;
+  font-size: 1.5rem;
   
-  margin-left: 70px;
+  margin-left: 7vw;
   text-decoration: none;
   padding: 0 1rem;
   height: 100%;
@@ -22,35 +22,34 @@ export const NavLink = styled(Link)`
   &.active {
     color: #000000;
   }
+  @media screen and (max-width: 768px) {
+   margin-left: 1vw;
+   font-size: 1.125rem;
+   margin-top: 5%;
+   position: relative;
+   top: 13%;
+  }
 `;
   
 
   
 export const NavMenu = styled.div`
-/*
+
   display: flex;
   align-items: center;
+  /*
   margin-right: -24px;
   Second Nav */
   /* margin-right: 24px; */
   /* Third Nav */
   /* width: 100vw;
   white-space: nowrap; */
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
   
 export const NavBtn = styled.nav`
-  display: flex;
-  align-items: center;
-  
   /* Third Nav */
   /* justify-content: flex-end;
   width: 100vw; */
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
   
 export const NavBtnLink = styled(Link)`
