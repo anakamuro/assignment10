@@ -7,8 +7,9 @@ import Footer from "./Footer"
 const Home = () => {
 return (
     <div className="home">
-    <img className="nature" src="IMGnature.jpg" alt="nature"/>
+    <div className="nature" alt="nature">
     <h1 className="text">Home anywhere and everywhere</h1>
+    </div>
    <Accomodation/>
    <Footer/>
     </div>

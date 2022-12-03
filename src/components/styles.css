@@ -1,3 +1,10 @@
+
+body, html {
+  font-style: "Montserrat";
+  background-color: white;
+  padding: 0;
+  margin: 0;
+}
 .App {
   text-align: center;
   margin: 0 auto;
@@ -5,6 +12,7 @@
 
 .home {
    height: fit-content;
+   margin: 0 auto;
   }
   .image-icon {
    margin-bottom: 70px;
@@ -14,13 +22,9 @@
   .text {
     font-size: 5.2rem;
     color: white;
-    position: absolute;
-    top: 30%;
-    left: 22%;
     height: fit-content;
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 500;
   }
   .text:hover {
     border-bottom: 1px solid blue;
@@ -28,14 +32,35 @@
    display: inline-block;
   }
   .nature {
-   position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
     width: 85vw;
     height: 25vh;
-    opacity: 0.8;
     border-radius: 15px;
-    background-color: rgb(0, 0, 0, 0.6);
-    filter: brightness(50%);
+    font-size: 5.2rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/IMGnature.jpg");
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    /*
+    filter: brightness(60%);
+    -webkit-filter: brightness(60%);
+    -moz-filter: brightness(60%);
+    -o-filter: brightness(60%);
+    -ms-filter: brightness(60%);*/
+    /*background: url("../../public/IMGnature.jpg"); */
+    
   }
+  /*
+  .nature::after {
+    content: ' ';
+    
+    background:rgb(0, 0, 0, 0.9);
+  }*/
+ 
   .imglist {
     display: flex;
     flex-direction: row;
@@ -104,16 +129,21 @@
     padding-bottom: 5%;
   }
   
-  .gallery .data-pic {
+   .data-pic {
     width: 24vw;
     height: 40vh;
     border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    text-decoration: none;
   }
   .gallery .pic-title {
-    position: absolute;
-    top: 250px;
-    left: 30px;
+    text-decoration: none;
     color: white;
+    margin-left: 3%;;
   }
   .background {
     background: #F6F6F6;
@@ -133,9 +163,7 @@
     width: 400px;
   }*/
 
-  .gallery .post-container {
-    position: relative;
-  }
+  
   
   .footer {
     width: 100vw;
@@ -248,7 +276,7 @@
     .iconD {
       margin-right: 3%;
     }
-    .noIcon {
+    .no-icon {
       display: none;
     }
     .title-list {

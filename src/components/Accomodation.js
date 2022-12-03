@@ -11,13 +11,12 @@ function Accomodation (){
    {
     postData && postData.map(postDetail => {
       return(
-        <div className="post-container" key={postDetail.id}>
-         <h3 className="pic-title">{postDetail.title}</h3>
-         <div >
-        <Link to={`/cards/${postDetail.title}`}><img className="data-pic" src={postDetail.pictures[0]} alt="pic"/>
+        <div key={postDetail.id}>
+        <Link className="post-detail" to={`/cards/${postDetail.title}`}><div className="data-pic" s style={{backgroundImage: `url(${postDetail.pictures[0]})` }} alt="pic">
+        <h3 className="pic-title">{postDetail.title}</h3>
+        </div>
         </Link>
         </div>
-          </div>
       )
     })
    }

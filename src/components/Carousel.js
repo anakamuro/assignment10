@@ -5,28 +5,20 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 
  function Carousel({pictures}){
-    const [currImg , setCurrImg] = useState(1);
+    const [currImg , setCurrImg] = useState(0);
  //   const [ isIcon, setIsIcon] = useState(false);
 
  
 
  const nextSlide = () => {
-    if (currImg !== pictures.length + 1){
-        setCurrImg(currImg + 1)
-    }
-    else if (currImg === pictures.length + 1){
-        setCurrImg(0) 
-    }
+    setCurrImg(currImg === pictures.length - 1 ? 0 : currImg + 1)
  }
 
  const prevSlide = () => {
-    if(currImg !== -1){
-        setCurrImg(currImg - 1)
-    }
-    else if ( currImg === -1){
-        setCurrImg(pictures.length) 
-    }
+    setCurrImg(currImg === 0 ? pictures.length -1 : currImg - 1)
+    
  }
+ 
 
  if(pictures === undefined) return '';
      return(
@@ -35,13 +27,13 @@ import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
             className="carouselInner"
             style={{backgroundImage: `url(${pictures[currImg]})` }}>
 
-            <div className="left"
+            <div className={pictures.length === 1 ?  "no-icon" : "left" }
             onClick={prevSlide}
             >
-            <ArrowBackIosIcon tyle={{ fontSize: 30}}/>
+            <ArrowBackIosIcon  style={{ fontSize: 30}}/>
             </div>
             <div className="center"></div>
-            <div className="right"
+            <div className={pictures.length === 1 ?  "no-icon" : "right" } 
             onClick={nextSlide}
             >
             <ArrowForwardIosIcon style={{ fontSize: 30}} />

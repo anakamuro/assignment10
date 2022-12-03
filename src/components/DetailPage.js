@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import postData from "./accomodation.json"
 import './styles.css';
 import {  useParams } from "react-router-dom";
@@ -60,7 +60,7 @@ const DetailPage = () => {
              </div>
              <div className="equipments">
             <div onClick={()=>setIsShow(!isShow)}  className="eTitle" style={{marginBottom: isShow ? '' : '30%'}}>Equipments
-            <div className="iconE"> {isShow ? <FontAwesomeIcon className={(pictures.length === 1) ? "icon": "noIcon" }  icon={faAngleDown} /> : <FontAwesomeIcon className="icon" icon={faAngleUp} />} </div></div>
+            <div className="iconE"> {isShow ? <FontAwesomeIcon className={(pictures.length === 1) ?  "noIcon" : "icon" }  icon={faAngleDown} /> : <FontAwesomeIcon className="icon" icon={faAngleUp} />} </div></div>
               
             {isShow && <div className="eContent" key ={card.id}>{card.Amenities.map((amenity,index)=> (<p className="dItem" key={index}>{amenity}</p>))}</div>}
              </div>
