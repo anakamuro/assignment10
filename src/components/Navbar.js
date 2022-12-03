@@ -6,7 +6,8 @@ import {
 } from './NavbarElements';
 import "./styles.css";
 
-const Navbar = () => {;
+const Navbar = () => {
+  ;
   return (
     <>
       <Nav className="nav">
@@ -14,7 +15,7 @@ const Navbar = () => {;
           <img className="k2 kasa" src="VectorK.png" alt="k"></img>
           <img className="kasa" src="Vectorhouse.png" alt="house"></img>
           <img className="kasa" src="Vectors.png" alt="s"></img>
-          <img className="kasa"src="Vectora.png" alt="a"></img>
+          <img className="kasa" src="Vectora.png" alt="a"></img>
         </div>
 
         <NavMenu className="nav-main">

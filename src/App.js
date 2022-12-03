@@ -11,12 +11,12 @@ function App() {
     <div className="App">
       <Navbar />
       {/* <BrowserRouter> */}
-        <Routes>
-          <Route exact path='/home' element={<Home />} />
-          <Route exact path='/cards/:title' element={<DetailPage/>} />
-          <Route exact path='/about' element={<About />} />
-          <Route exact path='/*' element={<Page404 />} />
-        </Routes>
+      <Routes>
+        <Route exact path='/home' element={<Home />} />
+        <Route exact path='/cards/:title' element={<DetailPage />} />
+        <Route exact path='/about' element={<About />} />
+        <Route exact path='/*' element={<Page404 />} />
+      </Routes>
       {/* </BrowserRouter> */}
     </div>
   );

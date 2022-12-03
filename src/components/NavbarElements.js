@@ -1,6 +1,6 @@
 import { NavLink as Link } from 'react-router-dom';
 import styled from 'styled-components';
-  
+
 export const Nav = styled.nav`
   background: white;
   color: #FF6060;
@@ -9,7 +9,7 @@ export const Nav = styled.nav`
   /* Third Nav */
   /* justify-content: flex-start; */
 `;
-  
+
 export const NavLink = styled(Link)`
   color: #FF6060;
   font-size: 1.5rem;
@@ -27,12 +27,12 @@ export const NavLink = styled(Link)`
    font-size: 1.125rem;
    margin-top: 5%;
    position: relative;
-   top: 13%;
+   top: 1%;
   }
 `;
-  
 
-  
+
+
 export const NavMenu = styled.div`
 
   display: flex;
@@ -45,13 +45,13 @@ export const NavMenu = styled.div`
   /* width: 100vw;
   white-space: nowrap; */
 `;
-  
+
 export const NavBtn = styled.nav`
   /* Third Nav */
   /* justify-content: flex-end;
   width: 100vw; */
 `;
-  
+
 export const NavBtnLink = styled(Link)`
   border-radius: 4px;
   background: #808080;
