@@ -12,10 +12,10 @@ const Navbar = () => {
     <>
       <Nav className="nav">
         <div className="image-icon">
-          <img className="k2 kasa" src="VectorK.png" alt="k"></img>
-          <img className="kasa" src="Vectorhouse.png" alt="house"></img>
-          <img className="kasa" src="Vectors.png" alt="s"></img>
-          <img className="kasa" src="Vectora.png" alt="a"></img>
+          <div className="kasa k2"></div>
+          <div className="kasa house"></div>
+          <div className="kasa s"></div>
+          <div className="kasa a"></div>
         </div>
 
         <NavMenu className="nav-main">

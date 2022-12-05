@@ -19,6 +19,8 @@ html {
 .image-icon {
   margin-bottom: 70px;
   margin-left: 7%;
+  display: flex;
+  flex-direction: row;
 }
 
 .text {
@@ -44,7 +46,7 @@ html {
   height: 25vh;
   border-radius: 15px;
   font-size: 5.2rem;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/IMGnature.jpg");
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../public/assets/IMGnature.jpg");
   background-position: center;
   background-size: cover;
   object-fit: contain;
@@ -61,16 +63,6 @@ html {
   border-radius: 10px;
 }
 
-.k {
-  position: relative;
-  bottom: 7%;
-}
-
-.k2 {
-  position: relative;
-  bottom: 10%;
-}
-
 .nav-main {
   margin-right: 7%;
   width: auto;
@@ -83,6 +75,29 @@ html {
   color: #FF6060;
   z-index: 12;
   padding-top: 100px;
+}
+.k2 {
+  background: url("../../public/assets/VectorK.png");
+  font-size: 40px;
+  width: 48px;
+  height: 64px;
+  position: relative;
+  bottom: 20%;
+}
+.house {
+  background: url("../../public/assets/Vectorhouse.png");
+  width: 48px;
+  height: 50px;
+}
+.s {
+  background: url("../../public/assets/Vectors.png");
+  width: 43px;
+  height: 50px;
+}
+.a {
+  background: url("../../public/assets/Vectora.png");
+  width: 43px;
+  height: 50px;
 }
 
 .error {
@@ -168,6 +183,30 @@ html {
   padding-top: 40px;
   padding-bottom: 20px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.fk {
+ background: url("../../public/assets/Vectorfooterk.png" );
+ width: 30px;
+ height: 36px;
+ position: relative;
+ bottom: 15%;
+}
+.fh {
+  background: url("../../public/assets/Vectorfooterh.png");
+  width: 30px;
+  height: 30px;
+}
+.fs {
+  background: url("../../public/assets/Vectorfooters.png" );
+  width: 26px;
+  height: 30px;
+}
+.fa {
+  background: url("../../public/assets/Vectorfootera.png" );
+  width: 25px;
+  height: 30px;
 }
 
 .footer-text {
@@ -185,12 +224,19 @@ html {
 
 .mountain {
   clear: both;
-  width: 90vw;
-  ;
+  width: 85vw;
+  background: url("../../public/assets/mountain.png");
   height: 200px;
   margin: 0 auto;
   display: block;
   border-radius: 25px;
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #accordion {
@@ -299,7 +345,7 @@ html {
 .cTitle {
   color: #FF6060;
   font-size: 2.25rem;
-  line-height: 1.5rem;
+  line-height: 2.5rem;
 }
 
 .cLocation {
@@ -333,7 +379,9 @@ html {
 }
 
 .cTags {
-  display: inline;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #FF6060;
   color: white;
   width: 10rem;
@@ -364,7 +412,16 @@ html {
 
 .backgroundB {
   margin: 0 auto;
-  width: 90%;
+  background: url("../../public/assets/BackgroundB.png");
+  width: 85vw;
+  height: 47vh;
+  background-position: center;
+  background-size: cover;
+  object-fit: contain;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .stars {
@@ -664,5 +721,36 @@ html {
 
   .content {
     width: 90vw;
+  }
+  .backgroundB {
+    margin: 0 auto;
+    background: url("../../public/assets/BackgroundB.png");
+    width: 85%;;
+    height: 47vh;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    zoom: 50%;
+  }
+  .mountain {
+    clear: both;
+    width: 93%;
+    height: 100%;
+    background: url("../../public/assets/mountain.png");
+    height: 200px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 25px;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

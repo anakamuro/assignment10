@@ -24,7 +24,7 @@ const DetailPage = () => {
 
   return (
     <div className="Dbackground">
-      <img className="backgroundB" src="backgroundB.png" alt="backgroundB" />
+      <div className="backgroundB" src="backgroundB.png" alt="backgroundB" />
       <div>
         {
           postData && postData.filter(card => card.title === title).map((card, index) => {
